@@ -1,16 +1,16 @@
 $(document).ready(function () {
     console.log("DOM fully loaded and parsed");
     
-    let blue;
-    let red;
-    let green;
-    let yellow;
-    let computerNum;
-    let yourTotalScore;
+    var blue;
+    var red;
+    var green;
+    var yellow;
+    var computerNum;
+    var yourTotalScore;
     //let yourWins = 0;
     //let yourlosses = 0;
-    let wins=0;
-    let losses=0;
+    var wins=0;
+    var losses=0;
     const generateCrystalNum = function () {
         let random = Math.floor(Math.random() * 12);
         return random;
@@ -18,7 +18,7 @@ $(document).ready(function () {
     }
     
     const generateRandomNum = function () {
-        let random = Math.floor(Math.random() * 100 + 19);
+        let random = Math.floor(Math.random() * 150 + 19);
         computerNum = random;
         return random;
     }
